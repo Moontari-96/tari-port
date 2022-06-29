@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+   width: 100vw; 
+   height: 100vh;
+}
+
+.main_img_video {
+    background: url(/image/main_title.gif) 0/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_img_video .logo {
+    background: url(/image/logo.png) 0/cover no-repeat;
+    display: block;
+    width: 161px;
+    height: 23px;
+    text-indent: -9999em;
+    opacity: .5;
+    transition: opacity .2s .4s;
+}
+
+.main_img_video .logo:hover {
+    opacity: 1;
+}

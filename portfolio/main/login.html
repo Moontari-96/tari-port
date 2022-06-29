@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../zavanas.css/sub.css">
+    <link rel="shortcut icon" href="../image/weblogo.png">
+    <script defer src="../javascript/sub.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header_container">
+            <ul class="header_inner">
+                <li>
+                    <a href="#">LOGIN</a>
+                </li>
+                
+                <li>
+                     <a href="#" class="myPage">마이페이지</a>
+                </li>
+                
+                <li>
+                    <a href="#" class="shoppingCart">장바구니</a>
+                </li>
+<!-- 
+                <li>
+                    <fieldset>
+						<legend>검색</legend>
+						<input name="search" onkeydown="CheckKey_search();" value="" class="MS_search_word serching_input"><a href="#" class="searchBtn"></a>
+					</fieldset>
+                </li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="mainPage">
+        <section class="login">
+            <div class="login_container">
+                <div class="login_select"> 
+                    <a href="#">MEMBER</a>
+                    <a href="#">NON-MEMBER</a>
+                </div>
+                <fieldset class="login_mem">
+                    <h2>LOGIN</h2>
+                    <div class="formBox">
+                        <div class="form">
+                            <input id="member_id" name="member_id" fw-filter="isFill" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="ID" value="" type="text">                    
+                            <input id="member_passwd" name="member_passwd" fw-label="패스워드" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-msg="" autocomplete="off" value="" type="password" placeholder="PW">                
+                        </div>
+                        <div class="option">
+                            <span class="auto">
+                            <input id="member_check_save_id0" name="check_save_id" fw-filter="" fw-label="아이디저장" fw-msg="" value="T" type="checkbox">
+                            <label for="member_check_save_id0">REMEMBER ME</label>
+                        </span>
+                        </div>
+                        <div id="login_button">
+                            <a href="#" class="back_color">SIGN IN</a>
+                        </div>
+
+                        <div id="login_button" style="margin: 30px 0 5px;width: 100%;">
+                            <a href="#" class="back_color">JOIN US</a>
+                        </div>
+
+                        <div id="login_button" style="width: 100%;">
+                                <li class="forgot">
+                                    <a href="#" onclick="back_color" class="back_color">did you forget your ID</a>&nbsp;&nbsp;or&nbsp;&nbsp;
+                                    <a href="#" class="right back_color">password?</a>
+                                </li>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="login_non login_hide">
+                    <div class="formBox">
+                        <div class="form">
+                            <input id="order_name" name="order_name" fw-filter="isFill" fw-label="주문자명" fw-msg="" class="inputTypeText" placeholder="주문자명" value="" type="text" title="주문자명">                
+                            <input id="order_id" name="order_id" maxlength="18" fw-filter="isOrderid&amp;isFill" fw-label="주문번호" fw-msg="" value="" type="text" placeholder="주문번호" title="주문번호">                
+                            <input id="order_password" name="order_password" fw-filter="isFill" fw-label="비회원주문 비밀번호" fw-msg="" value="" type="password" placeholder="비회원 주문 패스워드" title="비회원 주문 패스워드">            
+                        </div>
+                        <div id="login_button" style="margin: 30px 0 5px;width: 100%;">
+                            <a href="#" class="back_color"><b>조회</b></a>
+                        </div>
+
+                        <div id="login_button" style="width: 100%;">
+                            <p>비회원인 경우 주문번호로 주문조회만 가능합니다.</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        
+        <aside class="category_nav">
+            <div class="left_category">
+                <div class="main_logo">
+                    <a href="/main/main.html">logo</a>
+                </div>
+                <div class="category_list">
+                    <ul>
+                        <li><a href="/main/cloth.html">신상품</a></li>
+
+                        <li>
+                            <a href="/main/cloth.html">니트</a>
+                        </li>
+
+                        <li>
+                            <a href="/main/cloth.html">티셔츠</a>
+                        </li>
+
+                        <li>
+                            <a href="/main/cloth.html">아우터</a>
+
+                        </li>
+
+                        <li>
+                            <a href="/main/cloth.html">맨투맨 & 스웨트팬츠</a>
+                        </li>
+
+                        <li>
+                            <a href="/main/cloth.html">SALE</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/main/contact_us.html">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking" target = "_blank">배송추적</a>
+                        </li>
+                    </ul>
+
+                    <span class="category_bar">
+                        -
+                    </span>
+
+                    <div class="category_bottom">
+                        <p>
+                            <b>070-8267-8837</b><br>
+                            운영시간 AM 10 - PM 06<br>
+                            토/일/공휴일 휴무<br>
+                            점심시간 12:00~13:00
+                        </p>
+                        <p>
+						    신한은행 140-013-016585<br>
+					    	예금주 : 주식회사 디이미징<br>
+						</p>
+                        <br>
+                    </div>
+                </div>
+
+                <ul>
+                    <li class="category_Btn">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    
+    <footer>
+        <ul class="footer_sns">
+            <li>
+                <a href="https://www.instagram.com/zavanas.official/" target="_blank"><img
+                        src="../image/icon_social_01.png" alt=""></a>
+            </li>
+
+            <li>
+                <a href="https://www.facebook.com/zavanas.official" target="_blank"><img
+                        src="../image/icon_social_04.png" alt=""></a>
+            </li>
+
+            <li>
+                <a href="https://twitter.com/" target="_blank"><img src="../image/icon_social_05.png" alt=""></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
